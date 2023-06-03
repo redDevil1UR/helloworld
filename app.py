@@ -8,23 +8,28 @@ birth_year = input("what is the year you were born on: ")
 # checking valid birth year
 if int(birth_year) > 2023:
     sys.exit("Invalid input. Bye Bye")
-if int(birth_year)<1970:
+if int(birth_year)<1972:
     sys.exit("sorry this time we are hoping this power will get to a newer generation")
 # calculating age
 age = 2023 - int(birth_year)
 profession = input("What is your profession? ")
-home = input('Where is your home? ')
+if profession == "jobless":
+    sys.exit ('sorry get a job we will try again')
 
+
+home = input('Where is your home? ')
+if home == "homeless":
+    sys.exit ("sorry just don't try again")
 # take a user input, but we are not doing anything with it
-m= input("Why do you think yourself worthy of wielding the power of us wizards? ")
+m = input("Why do you think yourself worthy of wielding the power of us wizards? ")
 
 # if it is me, I am worthy
 if name == "Mojiz":
     k = "You are worthy"
-    n = "You are " + str(age) + " years old you are a " + profession + " you live in " + home + " you were right when you said " + m + " and you are more worthy of our power than anyone else, shazam!"
+    n = "You are " + str(age) + " years old you are a " + profession + " you live in " + home + " ,you were right when you said, \"" + m + "\" and you are worthy of our power, shazam!"
 else:
     k = "You are unworthy "
-    n = "What nonsense! You are " + str(age) + " years old, you are a " + profession + ", you live in " + home + " and thus you are unworthy, shazam!"
+    n = "What nonsense! You are " + str(age) + " years old, you are a " + profession + ", you live in " + home + " and the statement you gave which was " + m + " was wrong and thus you are unworthy, shazam!"
 
 # pause before printing all info
 time.sleep(1)
