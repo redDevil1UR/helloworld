@@ -88,7 +88,7 @@ if N2.lower() == "k":
 if N2.upper() == "L":
     print(str(N1 / 2.20462) + " kilos")
 
-# guessing game
+
 guess_number = 0
 answer_found = False
 while guess_number <= 2:
@@ -109,4 +109,40 @@ if not answer_found:
 # while Guess: <= int(3):
 #     Guess = Guess + 1
 # print("sorry you failed")
+
+
+N1 = float(input("First: "))
+N2 = float(input("Second: "))
+The_Question = input("what operator do you want to use (-,+,*,/): ")
+while The_Question is not ("-" or "+" or "/" or "*"):
+    The_Question = input("invalid input try something else: ")
+    if "-" or "+" or "*" or "/":
+        break
+if The_Question == "+":
+    print(N1 + N2)
+elif The_Question == "-":
+    print(N1 - N2)
+elif The_Question == "*":
+    print(N1 * N2)
+elif The_Question == "/":
+    print(N1 / N2)
+else:
+    print("invalid input")
+input("thank you for using this product. How do you think we can improve it ? ")
+print("your response was helpful byeee")
+
+
+while True:
+    N1 = float(input("temperature: "))
+    N2 = input("(C)elsius or (F)ahrenheit:")
+    # to compare input in lowercase and uppercase both, we convert to upper() and compare or to lower() and compare
+    if N2.lower() == "c":
+        print(str((N1 * 9/5) + 32) + " Fahreinheit")
+    if N2.lower() == "f":
+        print(str((N1 - 32) * 5 / 9) + " degrees celsius")
+    p = input("do you want to exit the program ? y or n ")
+    if p.upper() == 'Y':
+        input("thank you for using this product. How do you think we can improve it ? ")
+        print("your response was helpful byeee")
+        break
 
