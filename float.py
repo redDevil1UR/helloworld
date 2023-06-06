@@ -87,17 +87,18 @@ if N2.lower() == "k":
     print(str(N1 * 2.20462) + " pounds")
 if N2.upper() == "L":
     print(str(N1 / 2.20462) + " kilos")
-
-
+#kilos
+#
 guess_number = 0
 answer_found = False
 while guess_number <= 2:
-    questionString = "Guess number " + str(guess_number+1 ) + " : "
+    questionString = "Guess number " + str(guess_number + 1) + " : "
     moj = input(questionString)
     if int(moj) == 9:
         answer_found = True
-        print("You win")
+        print("You won")
         break
+
     guess_number = guess_number + 1
 if not answer_found:
     print("You lose")
@@ -112,12 +113,10 @@ if not answer_found:
 
 
 N1 = float(input("First: "))
-N2 = float(input("Second: "))
 The_Question = input("what operator do you want to use (-,+,*,/): ")
 while The_Question is not ("-" or "+" or "/" or "*"):
     The_Question = input("invalid input try something else: ")
-    if "-" or "+" or "*" or "/":
-        break
+N2 = float(input("Second: "))
 if The_Question == "+":
     print(N1 + N2)
 elif The_Question == "-":
@@ -125,7 +124,10 @@ elif The_Question == "-":
 elif The_Question == "*":
     print(N1 * N2)
 elif The_Question == "/":
-    print(N1 / N2)
+    if N2 == 0:
+        print("invalid input")
+    else:
+        print(N1 / N2)
 else:
     print("invalid input")
 input("thank you for using this product. How do you think we can improve it ? ")
@@ -146,3 +148,26 @@ while True:
         print("your response was helpful byeee")
         break
 
+
+
+car_running = False
+while True:
+    mp = input(">")
+    if mp.lower() == "help":
+        print('''start - to start the car 
+stop - to stop the car 
+quit - to exit''')
+    elif mp == "start":
+        car_running = True
+        print("Car started...Ready to go!")
+    elif mp == "stop":
+        if car_running:
+            car_running = False
+            print("car stopped.")
+        else:
+            print("car was not running, cannot be stopped")
+    elif mp == "quit":
+        break
+    else:
+        print("I don't understand that...")
+        # continue while
