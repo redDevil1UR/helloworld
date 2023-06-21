@@ -6,8 +6,11 @@ while True:
 stop - to stop the car 
 quit - to exit''')
     elif mp == "start":
-        car_running = True
-        print("Car started...Ready to go!")
+        if not car_running:
+            car_running = True
+            print("Car started...Ready to go!")
+        else:
+            print("Car's already started, what are you doing ?")
     elif mp == "stop":
         if car_running:
             car_running = False
@@ -15,6 +18,7 @@ quit - to exit''')
         else:
             print("car was not running, cannot be stopped")
     elif mp == "quit":
+        print("thank you for using this products")
         break
     else:
         # continue while loop
