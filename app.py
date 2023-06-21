@@ -24,7 +24,7 @@ if home == "homeless":
 m = input("Why do you think yourself worthy of wielding the power of us wizards? ")
 
 # if it is me, I am worthy
-if name == "Stupid guy":
+if name.upper() == "MOJIZ":
     k = "You are worthy"
     n = "You are " + str(age) + " years old you are a " + profession + " you live in " + home + " ,you were right when you said, \"" + m + "\" and you are worthy of our power, shazam!"
 else:
