@@ -88,28 +88,28 @@
 # if N2.upper() == "L":
 #     print(str(N1 / 2.20462) + " kilos")
 # #kilos
-# #
-# guess_number = 0
-# answer_found = False
-# while guess_number <= 2:
-#     questionString = "Guess number " + str(guess_number + 1) + " : "
-#     moj = input(questionString)
-#     if int(moj) == 9:
-#         answer_found = True
-#         print("You won")
-#         break
 #
-#     guess_number = guess_number + 1
-# if not answer_found:
-#     print("You lose")
+guess_number = 0
+answer_found = False
+while guess_number <= 2:
+    questionString = "Guess number " + str(guess_number + 1) + " : "
+    moj = input(questionString)
+    if int(moj) == 6:
+        answer_found = True
+        print("You won")
+        break
+
+    guess_number = guess_number + 1
+if not answer_found:
+    print("You lose")
 #
-# # Guess = 9
-# # input("Guess:")
-# # if Guess == 9:
-# #     print("You win")
-# # while Guess: <= int(3):
-# #     Guess = Guess + 1
-# # print("sorry you failed")
+# Guess = 9
+# input("Guess:")
+# if Guess == 9:
+#      print("You win")
+# while Guess: <= int(3):
+# Guess = Guess + 1
+# print("sorry you failed")
 #
 #
 # N1 = float(input("First: "))
@@ -184,9 +184,11 @@
 # for x in range(4):
 #     for y in range(3):
 #         print(f'({x}, {y}) ')
-#
-numbers = [5, 2, 5, 2, 2, 0, 2, 2, 2, 2, 2, 0, 5, 2, 5, 2, 5]
-for x in numbers:
-    for i in range(x):
-        print("x", end="")
-    print("")
+# # #
+# numbers = [5, 2, 5, 2, 2, 0, 2, 2, 2, 2, 2, 0, 5, 2, 5, 2, 5]
+# for x in numbers:
+#      for i in range(x):
+#          print("x", end="")
+
+# for x in 'Python':
+#     print(x)
