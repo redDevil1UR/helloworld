@@ -19,7 +19,7 @@ if profession == "jobless":
 
 home = input('Where is your home? ')
 if home == "homeless":
-    sys.exit ("sorry just don't try again")
+    sys.exit("sorry just don't try again")
 # take a user input, but we are not doing anything with it
 m = input("Why do you think yourself worthy of wielding the power of us wizards? ")
 
