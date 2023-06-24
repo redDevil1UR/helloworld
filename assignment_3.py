@@ -8,6 +8,5 @@ for i in m.split():
     if i not in unique_words:
         unique_words.append(i)
 # Print the number of unique words
-print(len(unique_words))
+print(str(len(unique_words)) + '\n' + str(sorted(unique_words)))
 # Print the unique words alphabetically sorted
-print(sorted(unique_words))
